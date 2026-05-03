@@ -18,15 +18,15 @@ const valueLabel = {
 
 function App() {
   const [title, setTitle] = useState('My QR')
-  const [frame, setFrame] = useState('rounded')
+  const [frame, setFrame] = useState('card')
   const [color, setColor] = useState('#0f172a')
   const [codeType, setCodeType] = useState('url')
   const [value, setValue] = useState('https://example.com')
   const [subtext, setSubtext] = useState('Scan to open')
-  const [style, setStyle] = useState('dot')
-  const [paddingWidth, setPaddingWidth] = useState(12)
+  const [style, setStyle] = useState('square')
+  const [paddingWidth, setPaddingWidth] = useState(0)
   const [downloadType, setDownloadType] = useState('png')
-  const [border, setBorder] = useState(2)
+  const [border, setBorder] = useState(0)
 
   const qrContainerRef = useRef(null)
   const qrCodeRef = useRef(null)
