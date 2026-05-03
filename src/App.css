@@ -122,6 +122,12 @@
   overflow: hidden;
 }
 
+.qr-preview canvas,
+.qr-preview svg {
+  max-width: 100%;
+  height: auto;
+}
+
 .download-btn {
   border: none;
   border-radius: 12px;
@@ -152,6 +158,20 @@
   .controls-grid {
     margin-top: 0;
     grid-template-columns: 1fr;
+  }
+
+  .controls-panel,
+  .controls-grid,
+  .preview-panel {
+    padding: 16px;
+  }
+
+  .qr-frame {
+    padding: 14px;
+  }
+
+  .qr-preview {
+    min-height: 0;
   }
 
   .controls-grid .full-width {
